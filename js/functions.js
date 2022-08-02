@@ -7,6 +7,7 @@ const boat = document.getElementById("Boat");
 sheep.addEventListener("click", moveElement);
 wolf.addEventListener("click", moveElement);
 lettuce.addEventListener("click", moveElement);
+farmer.addEventListener("click", moveFarmer);
 
 function moveElement(){
 	if (boat.getElementsByTagName('*').length === 2 && this.parentElement.classList.contains("edge")){
@@ -26,4 +27,8 @@ function moveElement(){
 				document.getElementById("rEdge").appendChild(this);
 			}
 		}
+};
+
+function moveFarmer(){
+
 };
