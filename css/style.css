@@ -19,3 +19,13 @@ body
   grid-template-rows: 20% 20% 20% 20% 20%;
   text-align: center;
 }
+.edge
+{
+    background-color: #836B32;
+    box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
+.river
+{
+  background-color: rgba(81, 140, 179, 1);
+  box-shadow: inset 2px 2px 0 rgba(255, 255, 255, 0.05), inset -2px -2px 0 #665235;
+}
