@@ -1,0 +1,16 @@
+#container 
+{
+  position: sticky;
+  top: 1em;
+  width: 50vw;
+  height: 50vw;
+  min-width: 300px;
+  min-height: 300px;
+  overflow: hidden;
+  border: 10px solid #6D5720;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  text-align: center;
+}
