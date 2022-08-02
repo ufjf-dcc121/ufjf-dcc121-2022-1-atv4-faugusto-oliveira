@@ -2,7 +2,12 @@ body
 {
   background-color: #196F3D;
 }
-
+img
+{
+  width: 40%;
+  height: 40%;
+  position: relative;
+}
 #container 
 {
   position: sticky;
