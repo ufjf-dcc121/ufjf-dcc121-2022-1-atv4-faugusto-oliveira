@@ -30,5 +30,10 @@ function moveElement(){
 };
 
 function moveFarmer(){
-
+	if (boat.parentElement.id === "lRiver") {
+		document.getElementById("rRiver").appendChild(boat);
+	}
+	else if (boat.parentElement.id === "rRiver") {
+		document.getElementById("lRiver").appendChild(boat);
+	}
 };
