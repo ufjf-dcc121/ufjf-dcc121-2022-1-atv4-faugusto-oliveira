@@ -10,7 +10,25 @@ lettuce.addEventListener("click", moveElement);
 farmer.addEventListener("click", moveFarmer);
 
 function checkStatus(){
-
+	if (sheep.parentElement.id === "rEdge" && wolf.parentElement.id === "rEdge" && lettuce.parentElement.id === "rEdge"){
+		alert("Você ganhou")
+	}
+	else if (boat.parentElement.id === "rRiver" && sheep.parentElement.id === "lEdge" && lettuce.parentElement.id === "lEdge"){
+		alert("Você perdeu");
+		location.reload();
+	}
+	else if (boat.parentElement.id === "rRiver" && sheep.parentElement.id === "lEdge" && wolf.parentElement.id === "lEdge"){
+		alert("Você perdeu");
+		location.reload();
+	}
+	else if (boat.parentElement.id === "lRiver" && sheep.parentElement.id === "rEdge" && lettuce.parentElement.id === "rEdge"){
+		alert("Você perdeu");
+		location.reload();
+	}
+	else if (boat.parentElement.id === "lRiver" && sheep.parentElement.id === "rEdge" && wolf.parentElement.id === "rEdge"){
+		alert("Você perdeu");
+		location.reload();
+	}
 };
 
 function moveElement(){
