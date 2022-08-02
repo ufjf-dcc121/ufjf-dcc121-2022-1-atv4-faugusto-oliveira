@@ -9,6 +9,10 @@ wolf.addEventListener("click", moveElement);
 lettuce.addEventListener("click", moveElement);
 farmer.addEventListener("click", moveFarmer);
 
+function checkStatus(){
+
+};
+
 function moveElement(){
 	if (boat.getElementsByTagName('*').length === 2 && this.parentElement.classList.contains("edge")){
 			alert("Movimento inválido")
@@ -36,4 +40,5 @@ function moveFarmer(){
 	else if (boat.parentElement.id === "rRiver") {
 		document.getElementById("lRiver").appendChild(boat);
 	}
+	checkStatus();
 };
